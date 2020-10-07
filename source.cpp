@@ -15,7 +15,9 @@ int main()
 	switch (phepToan)
 	{
 	case '+':
-		
+		int tong;
+		tong=a+b;
+		return tong;
 		break;
 	case '-':
 
