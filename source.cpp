@@ -31,7 +31,7 @@ int main()
 		return tong(a,b);
 		break;
 	case '-':
-
+return hieu(a,b);
 		break;
 	case '*':
 
