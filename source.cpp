@@ -15,7 +15,7 @@ int tich(int a, int b)
 }
 float thuong(int a, int b)
 {
-	return a/b;
+	return b == 0 ? -999 : a / b;
 }
 int main()
 {
@@ -37,7 +37,10 @@ int main()
 
 		break;
 	case '/':
-
+		if (thuong(a, b) == -999)
+			cout << "Cant division for 0!###";
+		else
+			cout << thuong(a, b);
 		break;
 	default:
 		cout << "Chon sai phep toan";
