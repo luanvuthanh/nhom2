@@ -23,7 +23,10 @@ int main()
 	cin >> ch;
 	switch (ch)
 	{
-	case 1:
+	case 1:int a;
+		cout << "\n Nhap canh hinh vuong:";
+		cin >> a;
+		return a * 4;
 
 		break;
 	case 2:
