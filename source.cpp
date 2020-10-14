@@ -15,7 +15,7 @@ int tich(int a, int b)
 }
 float thuong(int a, int b)
 {
-	return a/b;
+	return b==0?-999:a/b;
 }
 int main()
 {
@@ -37,13 +37,13 @@ int main()
 		cout << tich(a, b);
 		break;
 	case '/':
-		if (b == 0)
+		if (thuong(a,b)==-999)
 			cout << "loi chia so 0"
 		else
 			cout << thuong(a, b);
 		break;
 	default:
-		cout << "Chon sai phep toan";
+		cout << "Chon sai phep toan !";
 		break;
 	}
 	return 0;
