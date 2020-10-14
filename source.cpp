@@ -34,7 +34,7 @@ int main()
 return hieu(a,b);
 		break;
 	case '*':
-
+		cout << tich(a, b);
 		break;
 	case '/':
 		if (b == 0)
