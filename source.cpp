@@ -37,7 +37,10 @@ return hieu(a,b);
 
 		break;
 	case '/':
-
+		if (b == 0)
+			cout << "loi chia so 0"
+		else
+			cout << thuong(a, b);
 		break;
 	default:
 		cout << "Chon sai phep toan";
