@@ -28,10 +28,10 @@ int main()
 	switch (phepToan)
 	{
 	case '+':
-		return tong(a,b);
+		cout<< tong(a,b);
 		break;
 	case '-':
-return hieu(a,b);
+		cout<<hieu(a,b);
 		break;
 	case '*':
 		cout << tich(a, b);
