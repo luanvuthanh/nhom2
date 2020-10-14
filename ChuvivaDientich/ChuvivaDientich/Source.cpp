@@ -1,7 +1,21 @@
 #include"iostream"
 #include"Math.h"
 using namespace std;
+const float pi = 3.1416;
 
+void chuviTron() {
+	cout << "Nhap ban kinh: ";
+	cin >> int r;
+
+	cout << "Chu vi la: " + r * 2 * pi;
+}
+
+void dientichTron() {
+	cout << "Nhap ban kinh: ";
+	cin >> int r;
+
+	cout << "Chu vi la: " + r * r * pi;
+}
 int main()
 {
 	int ch;
@@ -25,10 +39,10 @@ int main()
 
 		break;
 	case 5:
-
+		chuviTron();
 		break;
 	case 6:
-
+		dientichTron();
 		break;
 	default:
 
@@ -36,3 +50,5 @@ int main()
 	}
 	return 0;
 }
+
+
