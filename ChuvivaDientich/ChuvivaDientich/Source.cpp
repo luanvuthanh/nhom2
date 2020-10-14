@@ -36,10 +36,16 @@ int main()
 		return a * a;
 		break;
 	case 3:
-
+		int x;int y;
+		cout<<"nhap chieu rong: "cin>>x;
+		cout<<"nhap chieu dai: "cin>>y;
+		cout<<"Chu vi hcn : "(x+y)*2;
 		break;
 	case 4:
-
+		int x;int y;
+		cout<<"nhap chieu rong: "cin>>x;
+		cout<<"nhap chieu dai: "cin>>y;
+		cout<<"Dien tich hcn :" x*y;
 		break;
 	case 5:
 		chuviTron();
