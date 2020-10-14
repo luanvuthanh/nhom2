@@ -13,7 +13,10 @@ int main()
 
 		break;
 	case 2:
-
+		int a;
+		cout << "\n Nhap canh hinh vuong:";
+		cin >> a;
+		return a * a;
 		break;
 	case 3:
 
