@@ -54,7 +54,7 @@ int main()
 		dientichTron();
 		break;
 	default:
-
+		//nothing
 		break;
 	}
 	return 0;
