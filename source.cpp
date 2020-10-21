@@ -20,13 +20,18 @@ float thuong(int a, int b)
 int main()
 {
 	int a, b;
+	int kq;
 	char phepToan;
+	int randA=0+rand() %(100+1-0);
+	int randB=0+rand() %(100+1-0);
+	
 	cout << "Nhap 2 so nguyen: ";
 	cin >> a >> b;
-	cout << "Tinh gi? (+,-,*,/) ";
-	cin >> ch;
+	cout << "Tinh gi? (+,-,*,/,1,2) ";
+	cin >> phepToan;
 	switch (phepToan)
 	{
+		
 	case '+':
 		cout<< tong(a,b);
 		break;
@@ -41,6 +46,20 @@ int main()
 			cout << "loi chia so 0"
 		else
 			cout << thuong(a, b);
+		break;
+	case '1':
+		kq= randA+randB;
+		if(a+b==kq)
+			cout<<"dung"
+			else
+				cout<<"sai";
+		break;
+	case '2':
+		kq= randA-randB;
+		if(a-b==kq)
+			cout<<"dung"
+			else
+				cout<<"sai";
 		break;
 	default:
 		cout << "Chon sai phep toan !";
