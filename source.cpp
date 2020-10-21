@@ -15,7 +15,7 @@ int tich(int a, int b)
 }
 float thuong(int a, int b)
 {
-	return a/b;
+	return b==0?-999:a/b;
 }
 int main()
 {
@@ -28,19 +28,22 @@ int main()
 	switch (phepToan)
 	{
 	case '+':
-		return tong(a,b);
+		cout<< tong(a,b);
 		break;
 	case '-':
-return hieu(a,b);
+		cout<<hieu(a,b);
 		break;
 	case '*':
-
+		cout << tich(a, b);
 		break;
 	case '/':
-
+		if (thuong(a,b)==-999)
+			cout << "loi chia so 0"
+		else
+			cout << thuong(a, b);
 		break;
 	default:
-		cout << "Chon sai phep toan";
+		cout << "Chon sai phep toan !";
 		break;
 	}
 	return 0;
